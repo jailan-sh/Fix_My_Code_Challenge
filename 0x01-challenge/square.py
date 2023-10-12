@@ -1,12 +1,14 @@
 #!/usr/bin/python3
+""" class squre"""
+
 
 class square():
-    
+    """ class squre """
     width = 0
     height = 0
 
-    
     def __init__(self, *args, **kwargs):
+        """constructor"""
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -15,10 +17,13 @@ class square():
         return self.width * self.width
 
     def PermiterOfMySquare(self):
-        return (self.width * 4) 
+        """ get perimeter """
+        return (self.width * 4)
 
     def __str__(self):
-        return "{}/{}".format(self.width, self.height)
+        """ represent class object as string"""
+        return "{}/{}".format(self.width, self.width)
+
 
 if __name__ == "__main__":
 
