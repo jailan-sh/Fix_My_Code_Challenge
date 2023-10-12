@@ -22,7 +22,7 @@ class square():
 
     def __str__(self):
         """ represent class object as string"""
-        return "{}/{}".format(self.width, self.width)
+        return "{}/{}".format(self.width, self.height)
 
 
 if __name__ == "__main__":
